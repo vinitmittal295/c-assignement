@@ -1,0 +1,99 @@
+software :set of programs 
+
+->programs :set of instructions and commands 
+
+C programming : 
+->programming language 
+
+->C is a mother language 
+
+->c is a structural programming language 
+
+->c is a platform dependent 
+
+-----------------------------------------------------------
+main.c 
+main :file name 
+
+.c :exntesion 
+basic code : 
+#include<stdio.h>
+int main()
+{
+    
+    return 0;
+}
+-----------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    printf("hello world");
+    return 0;
+}
+-------------------------------------------------------
+# : hash :preprocessor 
+
+include :keyword 
+
+keyword:reserved words |fixed words |it have a particular meaning 
+
+stdio : standard input /output 
+
+stdio.h => header file extension 
+
+< > =>angular brackets 
+
+
+#include<stdio.h> :header file |root file |library 
+
+int :datatype 
+
+main() :keyword 
+->to start the code execution 
+->it is a entry point of code 
+->it is a function 
+
+{ } :curly bracket 
+
+printf("hello world "); 
+
+printf() :predefine function 
+
+() :parenthesis 
+
+; :semicolon 
+
+" " :double quotation 
+
+return 0;
+
+independent : easy to run the code one pc to another pc
+
+
+dependent : it is not easy to run the code one pc to another pcit used heavy set up 
+
+-----------------------------------------------------------
+hello world
+welcome to india 
+#include<stdio.h>
+int main()
+{
+    printf("hello world\n");
+    printf("welcome to india");
+    return 0;
+}
+
+\n :for new line  
+
+-------------------------------------------------------------
+data type :it is used to store varaible and which type of value stored in a variable 
+
+variable : it is used to store the value and it provide the memory of the value |it is work like container 
+
+int a=34;
+
+int :datatype
+a:variable 
+34 
+
+

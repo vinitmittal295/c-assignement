@@ -1,0 +1,875 @@
+show1 :two number additon :no return and argument
+#include <stdio.h>
+void show(int a,int b);
+
+int main(){
+    int a, b;
+    printf("enter any value a and b");
+    scanf("%d %d",&a,&b);
+    show(a,b);
+    return 0;
+}void show(int a,int b){
+    int c=a+b;
+    printf("%d",c);
+}
+
+show2 :two number sub:no return and argument 
+
+#include <stdio.h>
+void sub(int a, int b);
+
+int main(){ 
+    int a;
+    printf("enter one value");
+    scanf("%d",&a);
+    int b;
+    printf("enter second value");
+    scanf("%d",&b);
+    sub(a,b);
+    return 0;
+}void sub(int a,int b){
+    int c=a-b;
+    printf("%d",c);
+}
+
+show3 :two number multi :no return and argument
+#include <stdio.h>
+void mul(int a, int b);
+
+int main(){
+    int a;
+    printf("enter one value");
+    scanf("%d",&a);
+    int b;
+    printf("enter second value");
+    scanf("%d",&b);
+    mul(a,b);
+    return 0;
+}void mul(int a,int b){
+    int c=a*b;
+    printf("%d",c);
+}
+
+show4 :two number div :no return and argument 
+#include <stdio.h>
+void div(int a, int b);
+
+int main(){
+    int a;
+    printf("enter one value");
+    scanf("%d",&a);
+    int b;
+    printf("enter second value");
+    scanf("%d",&b);
+    div(a,b);
+    return 0;
+}void div(int a,int b){
+    int c=a/b;
+    printf("%d",c);
+} 
+show5 :two number mod :no return and argument 
+
+
+#include <stdio.h>
+void mod(int a, int b);
+
+int main(){
+    int a;
+    printf("enter one value");
+    scanf("%d",&a);
+    int b;
+    printf("enter second value");
+    scanf("%d",&b);
+    mod(a,b);
+    return 0;
+}void mod(int a,int b){
+    int c=a%b;
+    printf("%d",c);
+}
+
+reverse---------------------------------------------------------------
+#include <stdio.h>
+void sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    
+    sub(num,rem,sum);
+    return 0;
+}void sub(int num,int rem,int sum){
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }printf("%d",sum);
+}
+
+pallindrome 
+
+#include <stdio.h>
+void sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    
+    sub(num,rem,sum);
+    return 0;
+}void sub(int num,int rem,int sum){
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }printf("%d",sum);
+}
+armstrong--------------------------------------
+#include <stdio.h>
+void sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    
+    sub(num,rem,sum);
+    return 0;
+}void sub(int num,int rem,int sum){
+    while(num>0){
+        rem=num%10;
+    sum=sum+rem*rem*rem;
+    num=num/10;
+    }printf("%d",sum);
+}
+count__________________________________
+
+#include <stdio.h>
+void sub(int num,int rem,int sum, int count);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    int count;
+    
+    sub(num,rem,sum,count);
+    return 0;
+}void sub(int num,int rem,int sum, int count){
+    while(num>0){
+    num=num/10;
+    count++;
+    }printf("%d",count);
+}
+
+
+sumofdigit______________________________
+#include <stdio.h>
+void sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem;
+    
+    sub(num,rem,sum);
+    return 0;
+}void sub(int num,int rem,int sum){
+    while(num>0){
+    rem=num%10;
+    sum=sum+rem;
+    num=num/10;
+    }printf("%d",sum);
+}
+
+
+factorial ______________________
+doubt
+#include <stdio.h>
+void fact(int n, int c);
+int main(){
+    int n;
+    printf("enter any value");
+    scanf("%d",n);
+    int c=1;
+    fact(n,c);
+    return 0;
+    
+}void fact(int n,int c){
+    for(int i=1; i<=n; i++){
+        c=c*n;
+    }printf("%d",c);
+    return 0;
+}
+
+fibonacci_____________________________________
+#include <stdio.h>
+void fibbonacci(int n,int n1,int n2,int n3);
+int main(){
+    int n=5;
+    printf("enter any value");
+    scanf("%d",&n);
+    int n1=0;
+    int n2=1;
+    int n3=0;
+    fibbonacci(n,n1,n2,n3);
+    return 0;
+}void fibbonacci(int n,int n1,int n2,int n3){
+    for(int i=1; i<=5; i++){
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }
+}
+
+
+swap ----------------------------------------------------
+#include <stdio.h>
+void swap (int a,int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    swap (a,b);
+    return 0;
+}void swap (int a,int b){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d\n",a);
+    printf("%d\n",b);
+}
+
+table----------------------
+#include <stdio.h>
+void table(int n);
+int main(){
+    int n;
+    printf("enter any value");
+    scanf("%d",&n);
+    table(n);
+    return 0;
+    
+}void table(int n){
+    for(int i=1; i<=10; i++){
+        printf("%d",i*n);
+    }
+}
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+return and no argument :
+
+int show() 
+78 print krna hey 
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20;
+    int c=a+b;
+    return c;
+}
+
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=78;
+    return a;
+}
+
+eturn and no argument :
+
+ show() 
+7.8 print krna hey 
+
+#include <stdio.h>
+float show();
+int main(){
+    printf("%f",show());
+    return 0;
+}float show(){
+    int a=7.8;
+    return a;
+}
+
+return and no argument :
+
+ show() 
+t print krna hey 
+#include <stdio.h>
+char show();
+int main(){
+    printf("%c",show());
+    return 0;
+}char show(){
+    char a='t';
+    return a;
+}
+
+show1 :two number additon ----------
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20; 
+    int c=a+b;
+    return c;
+}
+
+show2 :two number sub
+
+
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20; 
+    int c=a-b;
+    return c;
+}
+
+show3 :two number mul
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20; 
+    int c=a*b;
+    return c;
+}
+
+show4 :two number div
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20; 
+    int c=a/b;
+    return c;
+}
+
+
+show5 :two number mod
+#include <stdio.h>
+int show();
+int main(){
+    printf("%d",show());
+    return 0;
+}int show(){
+    int a=10;
+    int b=20; 
+    int c=a%b;
+    return c;
+}
+
+reverse -------------------------------------
+
+#include <stdio.h>
+int sub();
+
+int main(){
+    printf("%d",sub());
+    return 0;
+}int sub(){
+    
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }return sum;
+}
+pallindrome=----------------------------
+#include <stdio.h>
+int sub();
+
+int main(){
+    printf("%d",sub());
+    return 0;
+}int sub(){
+    
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }return sum;
+}
+
+fibonacci ---------------
+#include <stdio.h>
+int fibbonacci();
+int main(){
+    printf("%d",fibbonacci());
+    return 0;
+}int fibbonacci(){
+    int n=5;
+    printf("enter any value");
+    scanf("%d",&n);
+    int n1=0;
+    int n2=1;
+    int n3=0;
+    for(int i=1; i<=5; i++){
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }return n3;
+}
+
+
+
+return and argument--------------------------------------------------------------------------------
+show1 :two number additon 
+#include <stdio.h>
+int show(int a, int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",show(a,b));
+    return 0;
+}int show(int a, int b){
+    
+    int c=a+b;
+    return c;
+}
+show2 :two number sub
+#include <stdio.h>
+int show(int a, int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",show(a,b));
+    return 0;
+}int show(int a, int b){
+    
+    int c=a-b;
+    return c;
+}
+show2 :two number smul
+#include <stdio.h>
+int show(int a, int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",show(a,b));
+    return 0;
+}int show(int a, int b){
+    
+    int c=a*b;
+    return c;
+}
+show4 :two number div
+
+#include <stdio.h>
+int show(int a, int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",show(a,b));
+    return 0;
+}int show(int a, int b){
+    
+    int c=a/b;
+    return c;
+}
+show5 :two number mod 
+#include <stdio.h>
+int show(int a, int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",show(a,b));
+    return 0;
+}int show(int a, int b){
+    
+    int c=a%b;
+    return c;
+}
+
+swap : return and argument________________________________________________\
+#include <stdio.h>
+int swap (int a,int b);
+int main(){
+    int a;
+    printf("enter any value");
+    scanf("%d",&a);
+    int b;
+    printf("enter any value");
+    scanf("%d",&b);
+    printf("%d",swap (a,b));
+    return 0;
+}int swap (int a,int b){
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d\n",a);
+    printf("%d\n",b);
+    return a,b;
+}
+
+reverse -----------------------------------
+#include <stdio.h>
+int sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    printf("%d",sub(num,rem,sum));
+    return 0;
+}int sub(int num,int rem,int sum){
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }return sum;
+}
+pallindrome 
+
+#include <stdio.h>
+int sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    printf("%d",sub(num,rem,sum));
+    return 0;
+}int sub(int num,int rem,int sum){
+    while(num>0){
+        rem=num%10;
+    sum=sum*10+rem;
+    num=num/10;
+    }return sum;
+}
+
+count--------------------
+
+#include <stdio.h>
+int sub(int num,int rem,int sum, int count);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem=0;
+    int count;
+    printf("%d",sub(num,rem,sum,count));
+    return 0;
+}int sub(int num,int rem,int sum, int count){
+    while(num>0){
+    num=num/10;
+    count++;
+    }return count;
+}
+
+sum of digit ---------------------------
+#include <stdio.h>
+int sub(int num,int rem,int sum);
+
+int main(){
+    int num;
+    printf("enter one value");
+    scanf("%d",&num);
+    int sum=0;
+    int rem;
+    printf("%d",sub(num,rem,sum));
+    return 0;
+}int sub(int num,int rem,int sum){
+    while(num>0){
+    rem=num%10;
+    sum=sum+rem;
+    num=num/10;
+    }return sum;
+}
+
+fibbonacci=---------------------------------------------------------------
+#include <stdio.h>
+int fibbonacci(int n,int n1,int n2,int n3);
+int main(){
+    int n;
+    printf("enter any value");
+    scanf("%d",&n);
+    int n1=0;
+    int n2=1;
+    int n3=0;
+    printf("%d",fibbonacci(n,n1,n2,n3));
+    return 0;
+}int fibbonacci(int n,int n1,int n2,int n3){
+    for(int i=1; i<=n; i++){
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }return n3;
+}
+
+table---------------------------------------
+#include <stdio.h>
+int table(int n,int d);
+int main(){
+    int n;
+    int d;
+    printf("enter any value");
+    scanf("%d",&n);
+    printf("%d",table(n,d));
+    return 0;
+    
+}int table(int n,int d){
+    for(int i=1; i<=10; i++){
+        d=i*n;
+        printf("%d",d);
+    }return d;
+}
+fact---------------------------------------------------------
+#include <stdio.h>
+int fact(int n, int d);
+int main(){
+    int n;
+    int d=1;
+    printf("enter any value");
+    scanf("%d",&n);
+    printf("%d",fact(n,d));
+    return 0;
+    
+}int fact(int n,int d){
+    for(int i=1; i<=n; i++){
+        d=d*i;
+    }
+    return d;
+}
+
+function :
+
+factorial :no return and no argument 
+fibonacci :no return and  argument 
+reverse : return and no argument 
+pallindrome : return and  argument 
+swap : return and no argument 
+count :no return and  argument 
+armstrong    : return and  argument 
+sumofdigit:no return and no argument 
+table : return and no argument 
+even :1-->10 :no return and  argument 
+vowel :no return and  argument 
+area : return and  argument 
+user input 
+
+
+
+
+#include <stdio.h>
+void factorial ();
+void fibonacci (int n,int n1,int n2, int n3);
+int reverse();
+int pallindrome(int num,int rem, int sum);
+void count(int num1,int c);
+int armstrong(int num3,int rem,int sum);
+void sumofdigit();
+int table();
+void vowel(char alpha);
+int main(){
+    //no return and no argument//
+    //factorial//
+    factorial();
+    //no return and argument//
+    //fibonnaci//
+    int n;
+    printf("enter any value for fibonnaci");
+    scanf("%d",&n);
+    int n1=0;
+    int n2=1;
+    int n3;
+    fibonacci(n,n1,n2,n3);
+    //return and no argument//
+    //reverse//
+    printf("%d",reverse());
+    //return and argument//
+    //palindrome//
+    int num;
+    printf("enter any value for palindrome");
+    scanf("%d",&num);
+    int rem;
+    int sum=0;
+    printf("%d",pallindrome(num,rem,sum));
+    //no return and argument//
+    //count//
+    int num1;
+    int c;
+    printf("enter any value for count");
+    scanf("%d",&num1);
+    count(num1,c);
+    //armstrong//
+    //return and argument//
+    int num3;
+    printf("enter any value for armstrong");
+    scanf("%d",&num3);
+    //int rem;// phle declare ho chuke h
+    //int sum=0;// phle declare ho chuke h
+    printf("%d",armstrong(num3,rem,sum));
+    //sumofdigit//
+    //no return and no argument//
+    sumofdigit();
+    //table//
+    //return and no argument//
+    printf("%d",table());
+    //vowel//
+    //no return and argument
+    char alpha;
+    printf("enter any char for vowel");
+    scanf("%c",&alpha);
+    vowel(alpha);
+    return 0;
+}void factorial(){
+    int n;
+    printf("enter any value for factorial");
+    scanf("%d",&n);
+    int d=1;
+    for(int i=1; i<=n; i++){
+        d=d*i;
+    }printf("%d", d);
+}void fibonacci(int n,int n1,int n2, int n3){
+    for(int i=1; i<=n; i++){
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }
+    
+}int reverse(){
+    int n;
+    printf("enter any value for reverse");
+    scanf("%d",&n);
+    int rem;
+    int sum=0;
+    while(n>0){
+        rem=n%10;
+        sum=sum*10+rem;
+        n=n/10;
+    }return sum;
+}int pallindrome(int num,int rem, int sum){
+    
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }return sum;
+}void count(int num1,int c){
+    
+    while(num1>0){
+        num1=num1/10;
+        c++;
+    }printf("%d",c);
+    
+}int armstrong(int num3,int rem,int sum){
+    
+    while(num3>0){
+        rem=num3%10;
+        sum=sum+rem*rem*rem;
+        num3=num3/10;
+    }return sum;
+}void sumofdigit(){
+    int num4;
+    int rem;
+    int sum=0;
+    printf("enter any value for sum of digit");
+    scanf("%d",&num4);
+    while(num4>0){
+        rem=num4/10;
+        sum=sum+rem;
+        num4=num4/10;
+    }printf("%d",sum);
+}int table(){
+    int num5;
+    int e;
+    printf("enter any value for table");
+    scanf("%d",&num5);
+    for(int i=1;i<=num5; i++){
+        e=num5*i;
+        printf("%d",e);
+    }return e;
+}void vowel(char alpha){
+    
+    if(alpha=='e' || alpha=='a' ||alpha=='i' ||alpha=='o' ||alpha=='u'){
+        printf("this is vowel");
+    }else{
+        printf("this is consonant");
+    }
+}
+
+doubt in swap in rerurn and argument and also in if else how to store it like in vowel how to store 
+
+
+
+
+
+

@@ -1,0 +1,191 @@
+1)
+Write a program that takes an integer as input and prints the Fibonacci series up to that number
+
+#include <stdio.h>
+
+int main(){
+    int n;
+    printf("enter any value");
+    scanf("%d",&n);
+    int n1=0;
+    int n2=1;
+    int n3;
+    for(int i=1; i<=n; i++){
+        n3=n1+n2;
+        printf("%d",n3);
+        n1=n2;
+        n2=n3;
+    }
+    
+
+    return 0;
+}
+
+2)
+Create a C program that swaps the values of two variables without using a temporary variable.
+
+#include <stdio.h>
+
+int main(){
+    int a=20;
+    int b=10;
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("%d\n",a);
+    printf("%d\n",b);
+    return 0;
+}
+Write a C function to find the factorial of a given number :return and argument 
+#include <stdio.h>
+int fact(int n, int d);
+int main(){
+    int n;
+    int d=1;
+    printf("enter any value");
+    scanf("%d",&n);
+    printf("%d",fact(n,d));
+    return 0;
+    
+}int fact(int n,int d){
+    for(int i=1; i<=n; i++){
+        d=d*i;
+    }
+    return d;
+}
+
+4)
+Create a program that calculates the sum of digits of a given integer
+
+#include <stdio.h>
+
+int main(){
+    int num=3445;
+    int rem;
+    int sum=0;
+    while(num>0);{
+        rem=num%10;
+        sum=sum+rem;
+        num=num/10;
+        
+    }printf("%d",sum);
+    return 0;
+}
+
+Write a C program to check if a given number is an Armstrong number or not. An Armstrong numb
+#include <stdio.h>
+
+int main(){
+    int num;
+    int sum=0;
+    int rem;
+    printf("enter any value");
+    scanf("%d",&num);
+    while(num>0){
+        rem=num%10;
+        sum=sum+rem*rem*rem;
+        num=num/10;
+    }printf("%d",sum);
+    return 0;
+}
+
+
+6)
+******
+    *
+   *
+  *
+ *
+******
+
+
+#include <stdio.h>
+
+int main(){
+    for(int i=1; i<=6; i++){
+        for(int j=1;j<=6; j++){
+            if(i+j==7 || i==1 || i==6){
+                printf("*");
+            }else{
+                printf(" ");
+            }
+        }printf("\n");
+    }
+    return 0;
+}
+
+
+
+7)
+write a C program and check a number is  pallindrome or not ?
+
+#include <stdio.h>
+
+int main(){
+    int num;
+    printf("enter any value");
+    scanf("%d",&num);
+    int rem;
+    int sum=0;
+    while(num>0){
+        rem=num%10;
+        sum=sum*10+rem;
+        num=num/10;
+    }printf("%d",sum);
+    return 0;
+}
+
+8)
+write a C program in C to count the number of digits in a given input?
+
+#include <stdio.h>
+
+int main(){
+    int num;
+    printf("enter any value");
+    scanf("%d",&num);
+    int count=0;
+    while(num>0){
+        num=num/10;
+        count++;
+    }printf("%d",count);
+    return 0;
+}
+
+9)
+write a C program to print the multiplication table for numbers 2 to 10?
+#include <stdio.h>
+
+int main(){
+    int num;
+    printf("enter any value");
+    scanf("%d",&num);
+    for(int i=1; i<=num; i++){
+        printf("%d",i*num);
+    }
+    return 0;
+}
+
+
+10)
+C program that prompts the user to enter their gender, using 'M' for male and 'F' for female, and then checks and displays whether the user is male or female based on the input?
+
+#include <stdio.h>
+
+int main(){
+    char a;
+    printf("enter any char");
+    scanf("%c",&a);
+    if(a=='m'){
+        printf("you are male");
+    }else ifa=='f'(){
+        printf("you are female");
+    }else{
+        printf("not")
+    }
+    return 0;
+}
+
+
+
+
